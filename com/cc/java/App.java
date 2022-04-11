@@ -15,7 +15,16 @@ public class App {
         output("Konto 3: " + konto3.getKontostand());
         output("------------------");
 
+        // *2 / *3 / *10
+        konto1.setKontostand(2); // Verdoppelung
+        konto2.setKontostand(3); // Verdreifachung
+        konto3.setKontostand(10); // Verzehnfachung
 
+        // Abfrage Kontostand über Getter
+        output("Konto 1: " + konto1.getKontostand());
+        output("Konto 2: " + konto2.getKontostand());
+        output("Konto 3: " + konto3.getKontostand());
+        output("------------------");
 
 
 

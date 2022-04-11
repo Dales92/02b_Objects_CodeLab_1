@@ -8,12 +8,15 @@ public class Konto {
         this.kontostand = kontostand;
     }
 
+    // Getter
     public int getKontostand() {
         return kontostand;
     }
 
-    public void setKontostand(int kontostand) {
-        this.kontostand = kontostand;
+    // modifiz. Setter
+    public void setKontostand(int factor) {
+        // this.kontostand = factor * this.kontostand;
+        this.kontostand *= factor;
     }
 
     
