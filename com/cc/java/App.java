@@ -10,10 +10,7 @@ public class App {
         Konto konto3 = new Konto(10000);
 
         // Abfrage Kontostand über Getter
-        output("Konto 1: " + konto1.getKontostand());
-        output("Konto 2: " + konto2.getKontostand());
-        output("Konto 3: " + konto3.getKontostand());
-        output("------------------");
+        pollAccounts(konto1, konto2, konto3);
 
         // *2 / *3 / *10
         konto1.setKontostand(2); // Verdoppelung
@@ -21,13 +18,14 @@ public class App {
         konto3.setKontostand(10); // Verzehnfachung
 
         // Abfrage Kontostand über Getter
-        output("Konto 1: " + konto1.getKontostand());
-        output("Konto 2: " + konto2.getKontostand());
-        output("Konto 3: " + konto3.getKontostand());
-        output("------------------");
+        pollAccounts(konto1, konto2, konto3);
+    }
 
-
-
+    public static void pollAccounts(Konto k1, Konto k2, Konto k3) {
+        output("Konto 1: " + k1.getKontostand());
+        output("Konto 2: " + k2.getKontostand());
+        output("Konto 3: " + k3.getKontostand());
+        output("------------------"); 
     }
 
     public static void output(String outputStr) {
